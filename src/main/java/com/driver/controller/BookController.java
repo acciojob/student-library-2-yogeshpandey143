@@ -29,7 +29,7 @@ import java.util.List;
 
 
 	    @GetMapping("/")
-	    public ResponseEntity<List<Book>> getBooks(@RequestParam(value = "genre", required = false) String genre,
+	    public ResponseEntity<List<Book>> getBooks(@RequestParam(value = "genre", required = false) Genre genre,
 	                                   @RequestParam(value = "available", required = false, defaultValue = "false") boolean available,
 	                                   @RequestParam(value = "author", required = false) String author){
 

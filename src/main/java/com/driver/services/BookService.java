@@ -2,6 +2,7 @@ package com.driver.services;
 
 import com.driver.models.Author;
 import com.driver.models.Book;
+import com.driver.models.Genre;
 import com.driver.repositories.AuthorRepository;
 import com.driver.repositories.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +46,7 @@ public class BookService {
 
     //This has to be rectified....and given a thought
 
-    public List<Book> getBooks(String genre, boolean available, String author){
+    public List<Book> getBooks(Genre genre, boolean available, String author){
 
 
         if(genre != null && author != null){
